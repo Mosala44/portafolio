@@ -1,0 +1,55 @@
+.tarjeta-proyecto {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.tarjeta-proyecto:hover {
+  transform: translateY(-4px);
+  border-color: #444;
+}
+
+.tarjeta-contenido {
+  padding: 20px 22px 24px;
+}
+
+.tarjeta-contenido h3 {
+  margin: 10px 0 8px;
+  font-size: 1.3rem;
+}
+
+.tarjeta-contenido p {
+  margin: 0 0 16px;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.etiqueta-ejemplo {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.lista-tecnologias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lista-tecnologias li {
+  font-size: 0.8rem;
+  background: #1f1f1f;
+  color: #ddd;
+  padding: 4px 10px;
+  border-radius: 6px;
+}

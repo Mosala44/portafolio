@@ -1,0 +1,70 @@
+.redes-sociales {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Botón base */
+.boton-red {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+
+.boton-red:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+.boton-red-icono {
+  font-size: 1.3rem;
+}
+
+/* Colores de cada red social */
+.boton-red.linkedin {
+  background: #0a66c2;
+}
+.boton-red.linkedin:hover {
+  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.5);
+}
+
+/* GitHub: gris oscuro con borde para que se distinga del fondo negro */
+.boton-red.github {
+  background: #24292f;
+  border: 1px solid #484f58;
+}
+.boton-red.github:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+.boton-red.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+.boton-red.instagram:hover {
+  box-shadow: 0 6px 20px rgba(221, 42, 123, 0.5);
+}
+
+.boton-red.credly {
+  background: #ff6b00;
+}
+.boton-red.credly:hover {
+  box-shadow: 0 6px 20px rgba(255, 107, 0, 0.5);
+}
+
+.boton-red.gmail {
+  background: #ea4335;
+}
+.boton-red.gmail:hover {
+  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.5);
+}
