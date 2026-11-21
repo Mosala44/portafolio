@@ -1,0 +1,112 @@
+.tecnologias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 24px;
+}
+
+.grupo-tecnologias h4 {
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+.lista-chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip-tecnologia {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #111;
+  border: 1px solid #262626;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #ddd;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.chip-tecnologia:hover {
+  border-color: #444;
+  transform: translateY(-2px);
+}
+
+.chip-tecnologia svg {
+  font-size: 1.15rem;
+}
+
+/* ---------- Tooltip ---------- */
+.chip-tecnologia.con-tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.chip-tecnologia.con-tooltip:focus-visible {
+  outline: 2px solid #666;
+  outline-offset: 2px;
+}
+
+/* Globo con el texto (se toma del atributo data-tooltip) */
+.chip-tecnologia.con-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  width: max-content;
+  max-width: min(260px, 80vw);
+  padding: 8px 12px;
+  background: #f5f5f5;
+  color: #111;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 10;
+}
+
+/* Flechita debajo del globo */
+.chip-tecnologia.con-tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  border: 6px solid transparent;
+  border-top-color: #f5f5f5;
+  border-bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 10;
+}
+
+.chip-tecnologia.con-tooltip:hover::after,
+.chip-tecnologia.con-tooltip:hover::before,
+.chip-tecnologia.con-tooltip:focus-visible::after,
+.chip-tecnologia.con-tooltip:focus-visible::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Texto oculto visualmente, pero leído por lectores de pantalla */
+.solo-lectores {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

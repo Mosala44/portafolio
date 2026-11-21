@@ -18,6 +18,8 @@ function TarjetaLogro({ logro }) {
       >
         {logro.imagen ? (
           <img src={logro.imagen} alt={logro.titulo} loading="lazy" />
+        ) : logro.Icono ? (
+          <logro.Icono className="logro-icono" style={{ color: logro.colorIcono }} aria-hidden="true" />
         ) : (
           <span>{obtenerIniciales(logro.titulo)}</span>
         )}

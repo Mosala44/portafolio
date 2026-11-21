@@ -50,6 +50,10 @@
   border-radius: 0;
 }
 
+.logro-icono {
+  font-size: 1.7rem;
+}
+
 .logro-imagen img {
   width: 100%;
   height: 100%;

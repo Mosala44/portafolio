@@ -1,0 +1,61 @@
+.experiencia-laboral {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tarjeta-trabajo {
+  display: flex;
+  gap: 18px;
+  padding: 22px 24px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 14px;
+}
+
+.trabajo-icono {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1f1f1f;
+  border: 1px solid #333;
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.trabajo-contenido {
+  min-width: 0;
+}
+
+.trabajo-contenido h4 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+}
+
+.trabajo-subtitulo {
+  margin: 0;
+}
+
+.trabajo-subtitulo + .trabajo-logros {
+  margin-top: 14px;
+}
+
+.trabajo-subtitulo {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.trabajo-logros {
+  margin: 0;
+  padding-left: 18px;
+  color: #bbb;
+  line-height: 1.7;
+}
+
+.trabajo-logros li::marker {
+  color: #666;
+}

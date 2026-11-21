@@ -1,18 +1,23 @@
-// Datos de ejemplo para la sección Experiencia. Reemplázalos por los tuyos.
+import { SiUdemy } from 'react-icons/si'
+
+// Datos de la sección Experiencia: cursos completados y certificaciones.
 // Campos de cada elemento:
-//   titulo  → nombre del badge, certificación o curso
+//   titulo  → nombre del curso o certificación
 //   entidad → quién lo emite (empresa, plataforma, institución)
 //   detalle → (opcional) texto extra, por ejemplo las asignaturas
 //   fecha   → (opcional) cuándo lo obtuviste
 //   codigo  → (opcional) código de verificación
 //   imagen  → (opcional) ruta a la imagen, por ejemplo '/badges/mi-badge.png'
 //   imagenAncha → (opcional) true si la imagen es un logo alargado (ej. INACAP)
+//   Icono / colorIcono → (opcional) ícono de react-icons y su color, si no hay imagen
 //   enlace  → (opcional) link para verificarlo
 
-// Enlace a tus badges en Credly (para verificarlos)
+// Cursos completados.
+//   - Cisco: se verifican en tu perfil de Credly.
+//   - Udemy: se verifican con el link ude.my/UC-... de cada certificado.
 const PERFIL_CREDLY = 'https://www.credly.com/users/javier-varas.9011df4e/badges/credly'
 
-export const badges = [
+export const cursos = [
   {
     id: 1,
     titulo: 'Python Essentials 1',
@@ -33,6 +38,15 @@ export const badges = [
     entidad: 'Cisco Networking Academy',
     imagen: '/badges/introduction-to-data-science.png',
     enlace: PERFIL_CREDLY,
+  },
+  {
+    id: 4,
+    titulo: 'Curso de PHP Moderno',
+    entidad: 'Udemy · Héctor de León · 10,5 horas',
+    fecha: 'Noviembre 2026',
+    Icono: SiUdemy,
+    colorIcono: '#a435f0',
+    enlace: 'https://ude.my/UC-0b4602f7-940f-45a6-945a-67736e75e25b',
   },
 ]
 
@@ -85,10 +99,4 @@ export const certificaciones = [
     imagen: LOGO_INACAP,
     imagenAncha: true,
   },
-]
-
-export const cursos = [
-  { id: 1, titulo: 'Curso de ejemplo 1', entidad: 'Plataforma de ejemplo', fecha: '2025' },
-  { id: 2, titulo: 'Curso de ejemplo 2', entidad: 'Plataforma de ejemplo', fecha: '2024' },
-  { id: 3, titulo: 'Curso de ejemplo 3', entidad: 'Plataforma de ejemplo', fecha: '2024' },
 ]

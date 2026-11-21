@@ -30,10 +30,6 @@ function Perfil() {
             pero también me desenvuelvo con soltura en proyectos backend y móviles.
           </p>
           <p>
-            He desarrollado módulos para sistemas de gestión de bodega, ERP y recursos humanos (RRHH),
-            además de chatbots que automatizan la atención y agilizan procesos.
-          </p>
-          <p>
             Me motiva aprender constantemente nuevas tecnologías, herramientas y tendencias para
             mejorar mi eficiencia y la calidad de mis resultados. Mi gran sueño es crear una
             inteligencia artificial avanzada.
